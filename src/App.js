@@ -14,7 +14,7 @@ export default function App() {
 
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
+      <h1>Hello React-Hooks!</h1>
       <button onClick={subtractCount}>-</button>
       <p>Count: {count}</p>
       <button onClick={addCount}>+</button>
