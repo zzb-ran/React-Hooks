@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import data from './data.js';
 import './style.css';
 
 export default function App() {
   const [count, setCount] = useState(0);
+  const [data, setData] = useState([]);
 
   const subtractCount = () => {
     setCount(count - 1);
@@ -18,6 +20,7 @@ export default function App() {
       <button onClick={subtractCount}>-</button>
       <p>Count: {count}</p>
       <button onClick={addCount}>+</button>
+      <code>{data}</code>
     </div>
   );
 }
